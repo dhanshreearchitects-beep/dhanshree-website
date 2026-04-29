@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhanshree Architects | Architecture • Interior • Turnkey</title>
+<meta name="description" content="Dhanshree Architects - Premium Architecture, Interior Design & Turnkey Solutions in Meerut.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#fff;
+color:#111;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#ffffffee;
+backdrop-filter:blur(10px);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 6%;
+z-index:999;
+box-shadow:0 8px 25px rgba(0,0,0,.06);
+}
+
+.logo-wrap{
+display:flex;
+align-items:center;
+gap:14px;
+}
+
+.logo{
+height:52px;
+width:auto;
+}
+
+.brand{
+font-size:22px;
+font-weight:800;
+letter-spacing:.5px;
+}
+
+.google-badge{
+background:#fff;
+padding:8px 16px;
+border-radius:50px;
+font-size:13px;
+font-weight:700;
+border:1px solid #eee;
+box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+nav a{
+text-decoration:none;
+margin-left:24px;
+color:#111;
+font-weight:600;
+font-size:14px;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:140px 20px 80px;
+background:
+linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
+url('hero-project.jpg');
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+.hero-box{
+max-width:950px;
+}
+
+.hero h1{
+font-size:52px;
+line-height:1.2;
+font-weight:800;
+margin-bottom:18px;
+color:#fff;
+}
+
+.hero h1 span{
+color:#b58a57;
+}
+
+.hero p{
+font-size:18px;
+color:#f1f1f1;
+max-width:780px;
+margin:auto;
+line-height:1.8;
+}
+
+.hero-btns{
+margin-top:35px;
+display:flex;
+justify-content:center;
+gap:16px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:15px 28px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+display:inline-block;
+transition:.3s;
+}
+
+.btn-dark{
+background:#111;
+color:#fff;
+}
+
+.btn-gold{
+background:#b58a57;
+color:#fff;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+section{
+padding:80px 6%;
+}
+
+.section-title{
+text-align:center;
+font-size:38px;
+font-weight:800;
+margin-bottom:14px;
+}
+
+.section-sub{
+text-align:center;
+color:#666;
+max-width:800px;
+margin:auto auto 45px;
+line-height:1.8;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:22px;
+}
+
+.card{
+background:#fff;
+border:1px solid #eee;
+border-radius:22px;
+padding:28px;
+box-shadow:0 12px 30px rgba(0,0,0,.05);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card h3{
+margin-bottom:12px;
+font-size:22px;
+}
+
+.card p{
+color:#666;
+line-height:1.8;
+font-size:15px;
+}
+
+.premium-slider{
+max-width:1150px;
+margin:auto;
+position:relative;
+overflow:hidden;
+border-radius:28px;
+box-shadow:0 25px 55px rgba(0,0,0,.15);
+}
+
+.slider-track{
+display:flex;
+transition:transform .8s ease;
+}
+
+.slide{
+min-width:100%;
+overflow:hidden;
+}
+
+.slide img{
+width:100%;
+height:560px;
+object-fit:cover;
+transform:scale(1);
+transition:transform 6s ease;
+}
+
+.slide.active img{
+transform:scale(1.08);
+}
+
+.arrow{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+background:rgba(0,0,0,.45);
+color:#fff;
+border:none;
+font-size:28px;
+width:48px;
+height:48px;
+border-radius:50%;
+cursor:pointer;
+z-index:10;
+transition:.3s;
+}
+
+.arrow:hover{
+background:#b58a57;
+}
+
+.prev{left:18px;}
+.next{right:18px;}
+
+.dots{
+position:absolute;
+bottom:18px;
+left:50%;
+transform:translateX(-50%);
+display:flex;
+gap:10px;
+z-index:10;
+}
+
+.dot{
+width:12px;
+height:12px;
+border-radius:50%;
+background:rgba(255,255,255,.6);
+cursor:pointer;
+transition:.3s;
+}
+
+.dot.active{
+background:#b58a57;
+transform:scale(1.2);
+}
+
+.reviews{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.review-card{
+background:#fff;
+border:1px solid #eee;
+padding:26px;
+border-radius:22px;
+box-shadow:0 12px 30px rgba(0,0,0,.05);
+}
+
+.review-card h4{
+margin:12px 0 8px;
+font-size:18px;
+}
+
+.review-card p{
+color:#555;
+line-height:1.8;
+font-size:15px;
+}
+
+.contact{
+text-align:center;
+background:#111;
+color:#fff;
+border-radius:28px;
+padding:70px 30px;
+}
+
+.contact h2{
+font-size:40px;
+margin-bottom:14px;
+}
+
+.contact p{
+color:#ddd;
+margin-bottom:26px;
+}
+
+footer{
+text-align:center;
+padding:28px;
+font-size:14px;
+color:#777;
+}
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:#fff;
+padding:15px 18px;
+border-radius:50px;
+font-weight:700;
+text-decoration:none;
+box-shadow:0 12px 25px rgba(0,0,0,.15);
+z-index:999;
+}
+
+@media(max-width:900px){
+nav{display:none;}
+.hero h1{font-size:38px;}
+header{padding:15px 4%;}
+.brand{font-size:18px;}
+.google-badge{display:none;}
+.slide img{height:280px;}
+.arrow{width:38px;height:38px;font-size:22px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo-wrap">
+<img src="logo.png" class="logo">
+<div class="brand">Dhanshree Architects</div>
+<div class="google-badge">Trusted Design & Execution</div>
+</div>
+
+<nav>
+<a href="#projects">Projects</a>
+<a href="#services">Services</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-box">
+<h1><span>Architecture</span> • Interior • Turnkey</h1>
+<p>Luxury Spaces. Timeless Design. Trusted Execution.</p>
+
+<div class="hero-btns">
+<a href="https://wa.me/919634344267" class="btn btn-dark">Book Consultation</a>
+<a href="#projects" class="btn btn-gold">View Projects</a>
+</div>
+</div>
+</section>
+
+<section id="projects">
+<h2 class="section-title">Featured Projects</h2>
+<p class="section-sub">Real executed projects by Dhanshree Architects.</p>
+
+<div class="premium-slider">
+<div class="slider-track" id="sliderTrack">
+<div class="slide active"><img src="project1.jpg"></div>
+<div class="slide"><img src="project2.jpg"></div>
+<div class="slide"><img src="project3.jpg"></div>
+<div class="slide"><img src="project4.jpg"></div>
+<div class="slide"><img src="project5.jpg"></div>
+</div>
+
+<button class="arrow prev" onclick="moveSlide(-1)">❮</button>
+<button class="arrow next" onclick="moveSlide(1)">❯</button>
+<div class="dots" id="dots"></div>
+</div>
+</section>
+
+<section id="services">
+<h2 class="section-title">Our Expertise</h2>
+<p class="section-sub">Complete planning, designing, execution and supervision under one roof.</p>
+
+<div class="services">
+<div class="card"><h3>Residential</h3><p>Luxury Homes, Villas and Residences.</p></div>
+<div class="card"><h3>Commercial</h3><p>Offices, Showrooms, Retail and Pharma Units.</p></div>
+<div class="card"><h3>Interiors</h3><p>Elegant interior solutions with premium finish.</p></div>
+<div class="card"><h3>Turnkey</h3><p>Concept to handover complete execution.</p></div>
+</div>
+</section>
+
+<section id="reviews">
+<h2 class="section-title">Google Reviews</h2>
+
+<div class="reviews">
+<div class="review-card"><h4>MR Jain Bakery</h4><p>Excellent interior work.</p></div>
+<div class="review-card"><h4>Ayush Jain</h4><p>Professional and timely delivery.</p></div>
+<div class="review-card"><h4>Sahil Jain</h4><p>Creative and highly recommended.</p></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="contact">
+<h2>Let's Build Something Exceptional</h2>
+<p>Pooja Arcade, Opp. NAS College, Meerut</p>
+<a href="https://wa.me/919634344267" class="btn btn-gold">WhatsApp Now</a>
+</div>
+</section>
+
+<footer>
+© 2026 Dhanshree Architects
+</footer>
+
+<a href="https://wa.me/919634344267" class="whatsapp">WhatsApp</a>
+
+<script>
+const track=document.getElementById("sliderTrack");
+const slides=document.querySelectorAll(".slide");
+const dotsContainer=document.getElementById("dots");
+
+let currentIndex=0;
+let autoSlide;
+
+slides.forEach((_,i)=>{
+let dot=document.createElement("div");
+dot.classList.add("dot");
+if(i===0) dot.classList.add("active");
+dot.onclick=()=>goToSlide(i);
+dotsContainer.appendChild(dot);
+});
+
+const dots=document.querySelectorAll(".dot");
+
+function updateSlider(){
+track.style.transform=`translateX(-${currentIndex*100}%)`;
+slides.forEach(s=>s.classList.remove("active"));
+dots.forEach(d=>d.classList.remove("active"));
+slides[currentIndex].classList.add("active");
+dots[currentIndex].classList.add("active");
+}
+
+function moveSlide(step){
+currentIndex+=step;
+if(currentIndex>=slides.length) currentIndex=0;
+if(currentIndex<0) currentIndex=slides.length-1;
+updateSlider();
+resetAuto();
+}
+
+function goToSlide(index){
+currentIndex=index;
+updateSlider();
+resetAuto();
+}
+
+function startAuto(){
+autoSlide=setInterval(()=>moveSlide(1),4000);
+}
+
+function resetAuto(){
+clearInterval(autoSlide);
+startAuto();
+}
+
+updateSlider();
+startAuto();
+</script>
+
+</body>
+</html>
