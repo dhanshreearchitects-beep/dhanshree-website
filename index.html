@@ -1,486 +1,2305 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dhanshree Architects | Architecture • Interior • Turnkey</title>
-<meta name="description" content="Dhanshree Architects - Premium Architecture, Interior Design & Turnkey Solutions in Meerut.">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<title>Dhanshree Architects | Architecture • Interiors • Turnkey | Meerut</title>
+
+<meta name="description"
+content="Dhanshree Architects is a Meerut based architecture and interior design studio offering Architecture, Interior Design, Turnkey Execution, Renovation and Vastu Planning across Meerut, Noida, Delhi NCR and Western Uttar Pradesh.">
+
+<meta name="keywords"
+content="Architect in Meerut, Interior Designer Meerut, Dhanshree Architects, Architecture Meerut, Interior Design Meerut, Noida Architect, Delhi NCR Architect">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 
 <style>
+
+/* =====================================================
+   GLOBAL
+===================================================== */
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-font-family:'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-background:#fff;
-color:#111;
+    font-family:'DM Sans',sans-serif;
+    background:#f7f5f0;
+    color:#1d1d1b;
+    overflow-x:hidden;
 }
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button,
+input,
+select,
+textarea{
+    font:inherit;
+}
+
+:root{
+    --bg:#f7f5f0;
+    --white:#ffffff;
+    --dark:#1b1b19;
+    --text:#282824;
+    --muted:#706f69;
+    --line:#dcd8cf;
+    --accent:#a17b51;
+    --light:#ece7dd;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
 
 header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-background:#ffffffee;
-backdrop-filter:blur(10px);
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 6%;
-z-index:999;
-box-shadow:0 8px 25px rgba(0,0,0,.06);
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:82px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 5%;
+    background:rgba(247,245,240,.94);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid rgba(0,0,0,.06);
+    z-index:9999;
 }
 
-.logo-wrap{
-display:flex;
-align-items:center;
-gap:14px;
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:15px;
 }
 
-.logo{
-height:52px;
-width:auto;
+.logo-area img{
+    width:auto;
+    height:52px;
+    object-fit:contain;
 }
 
-.brand{
-font-size:22px;
-font-weight:800;
-letter-spacing:.5px;
+.brand-name{
+    font-family:'Playfair Display',serif;
+    font-size:22px;
+    font-weight:600;
+    letter-spacing:.4px;
 }
 
-.google-badge{
-background:#fff;
-padding:8px 16px;
-border-radius:50px;
-font-size:13px;
-font-weight:700;
-border:1px solid #eee;
-box-shadow:0 8px 20px rgba(0,0,0,.06);
+nav{
+    display:flex;
+    align-items:center;
+    gap:32px;
 }
 
 nav a{
-text-decoration:none;
-margin-left:24px;
-color:#111;
-font-weight:600;
-font-size:14px;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:.8px;
+    text-transform:uppercase;
+    transition:.25s;
 }
+
+nav a:hover{
+    color:var(--accent);
+}
+
+.header-btn{
+    padding:12px 20px;
+    border:1px solid var(--dark);
+}
+
+.header-btn:hover{
+    background:var(--dark);
+    color:#fff;
+}
+
+.menu-btn{
+    display:none;
+    background:none;
+    border:none;
+    font-size:27px;
+    cursor:pointer;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
 
 .hero{
-min-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:140px 20px 80px;
-background:
-linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
-url('hero-project.jpg');
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
+    height:100vh;
+    min-height:720px;
+    position:relative;
+    display:flex;
+    align-items:flex-end;
+    background:
+    linear-gradient(
+        90deg,
+        rgba(0,0,0,.66) 0%,
+        rgba(0,0,0,.34) 55%,
+        rgba(0,0,0,.15) 100%
+    ),
+    url("hero-project.jpg") center center / cover no-repeat;
 }
 
-.hero-box{
-max-width:950px;
+.hero-content{
+    width:100%;
+    padding:0 6% 9%;
+    color:#fff;
+}
+
+.hero-small{
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    margin-bottom:24px;
 }
 
 .hero h1{
-font-size:52px;
-line-height:1.2;
-font-weight:800;
-margin-bottom:18px;
-color:#fff;
+    font-family:'Playfair Display',serif;
+    font-size:clamp(52px,7vw,104px);
+    font-weight:500;
+    line-height:.95;
+    max-width:1100px;
 }
 
 .hero h1 span{
-color:#b58a57;
+    color:#d6b38b;
 }
 
-.hero p{
-font-size:18px;
-color:#f1f1f1;
-max-width:780px;
-margin:auto;
-line-height:1.8;
+.hero-text{
+    font-size:18px;
+    line-height:1.7;
+    max-width:650px;
+    color:#e8e8e8;
+    margin-top:30px;
 }
 
-.hero-btns{
-margin-top:35px;
-display:flex;
-justify-content:center;
-gap:16px;
-flex-wrap:wrap;
+.hero-actions{
+    display:flex;
+    gap:14px;
+    margin-top:35px;
+    flex-wrap:wrap;
 }
 
 .btn{
-padding:15px 28px;
-border-radius:50px;
-text-decoration:none;
-font-weight:700;
-display:inline-block;
-transition:.3s;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:52px;
+    padding:0 28px;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:.8px;
+    text-transform:uppercase;
+    transition:.3s;
 }
 
-.btn-dark{
-background:#111;
-color:#fff;
+.btn-light{
+    background:#fff;
+    color:#111;
 }
 
-.btn-gold{
-background:#b58a57;
-color:#fff;
+.btn-light:hover{
+    background:var(--accent);
+    color:#fff;
 }
 
-.btn:hover{
-transform:translateY(-3px);
+.btn-outline{
+    border:1px solid rgba(255,255,255,.7);
+    color:#fff;
 }
+
+.btn-outline:hover{
+    background:#fff;
+    color:#111;
+}
+
+
+/* =====================================================
+   GENERAL SECTIONS
+===================================================== */
 
 section{
-padding:80px 6%;
+    padding:110px 6%;
+}
+
+.section-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:40px;
+    margin-bottom:55px;
+}
+
+.section-label{
+    color:var(--accent);
+    text-transform:uppercase;
+    font-size:12px;
+    letter-spacing:3px;
+    margin-bottom:14px;
 }
 
 .section-title{
-text-align:center;
-font-size:38px;
-font-weight:800;
-margin-bottom:14px;
+    font-family:'Playfair Display',serif;
+    font-size:clamp(42px,5vw,70px);
+    line-height:1.05;
+    font-weight:500;
 }
 
-.section-sub{
-text-align:center;
-color:#666;
-max-width:800px;
-margin:auto auto 45px;
-line-height:1.8;
+.section-description{
+    max-width:490px;
+    font-size:15px;
+    line-height:1.8;
+    color:var(--muted);
 }
 
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:22px;
+
+/* =====================================================
+   PROJECT FILTER
+===================================================== */
+
+.project-filter{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-bottom:40px;
 }
 
-.card{
-background:#fff;
-border:1px solid #eee;
-border-radius:22px;
-padding:28px;
-box-shadow:0 12px 30px rgba(0,0,0,.05);
-transition:.3s;
+.filter-btn{
+    background:transparent;
+    border:1px solid var(--line);
+    padding:11px 18px;
+    cursor:pointer;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:.7px;
+    transition:.3s;
 }
 
-.card:hover{
-transform:translateY(-6px);
+.filter-btn.active,
+.filter-btn:hover{
+    background:var(--dark);
+    border-color:var(--dark);
+    color:#fff;
 }
 
-.card h3{
-margin-bottom:12px;
-font-size:22px;
+
+/* =====================================================
+   PROJECTS
+===================================================== */
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:65px 28px;
 }
 
-.card p{
-color:#666;
-line-height:1.8;
-font-size:15px;
+.project-card{
+    cursor:pointer;
 }
 
-.premium-slider{
-max-width:1150px;
-margin:auto;
-position:relative;
-overflow:hidden;
-border-radius:28px;
-box-shadow:0 25px 55px rgba(0,0,0,.15);
+.project-card.hide{
+    display:none;
 }
 
-.slider-track{
-display:flex;
-transition:transform .8s ease;
+.project-image{
+    position:relative;
+    overflow:hidden;
+    background:#ddd;
 }
 
-.slide{
-min-width:100%;
-overflow:hidden;
+.project-image img{
+    height:520px;
+    object-fit:cover;
+    transition:transform .7s ease;
 }
 
-.slide img{
-width:100%;
-height:560px;
-object-fit:cover;
-transform:scale(1);
-transition:transform 6s ease;
+.project-card:nth-child(3n+1) .project-image img{
+    height:650px;
 }
 
-.slide.active img{
-transform:scale(1.08);
+.project-card:hover .project-image img{
+    transform:scale(1.035);
 }
 
-.arrow{
-position:absolute;
-top:50%;
-transform:translateY(-50%);
-background:rgba(0,0,0,.45);
-color:#fff;
-border:none;
-font-size:28px;
-width:48px;
-height:48px;
-border-radius:50%;
-cursor:pointer;
-z-index:10;
-transition:.3s;
+.project-overlay{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(0,0,0,.12);
+    opacity:0;
+    transition:.3s;
 }
 
-.arrow:hover{
-background:#b58a57;
+.project-card:hover .project-overlay{
+    opacity:1;
 }
 
-.prev{left:18px;}
-.next{right:18px;}
-
-.dots{
-position:absolute;
-bottom:18px;
-left:50%;
-transform:translateX(-50%);
-display:flex;
-gap:10px;
-z-index:10;
+.view-circle{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:rgba(255,255,255,.9);
+    color:#111;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:11px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:1px;
 }
 
-.dot{
-width:12px;
-height:12px;
-border-radius:50%;
-background:rgba(255,255,255,.6);
-cursor:pointer;
-transition:.3s;
+.project-info{
+    padding-top:19px;
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    border-top:1px solid var(--line);
+    margin-top:14px;
 }
 
-.dot.active{
-background:#b58a57;
-transform:scale(1.2);
+.project-name{
+    font-family:'Playfair Display',serif;
+    font-size:27px;
 }
 
-.reviews{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:20px;
+.project-type{
+    color:var(--muted);
+    font-size:13px;
+    margin-top:7px;
 }
 
-.review-card{
-background:#fff;
-border:1px solid #eee;
-padding:26px;
-border-radius:22px;
-box-shadow:0 12px 30px rgba(0,0,0,.05);
+.project-location{
+    color:var(--muted);
+    font-size:12px;
+    text-align:right;
 }
 
-.review-card h4{
-margin:12px 0 8px;
-font-size:18px;
+
+/* =====================================================
+   STUDIO
+===================================================== */
+
+.studio{
+    background:var(--dark);
+    color:#fff;
 }
 
-.review-card p{
-color:#555;
-line-height:1.8;
-font-size:15px;
+.studio-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:center;
 }
 
-.contact{
-text-align:center;
-background:#111;
-color:#fff;
-border-radius:28px;
-padding:70px 30px;
+.studio-image img{
+    min-height:610px;
+    object-fit:cover;
 }
 
-.contact h2{
-font-size:40px;
-margin-bottom:14px;
+.studio .section-label{
+    color:#caa275;
 }
 
-.contact p{
-color:#ddd;
-margin-bottom:26px;
+.studio-title{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(42px,5vw,67px);
+    font-weight:500;
+    line-height:1.05;
+    margin-bottom:30px;
 }
+
+.studio-text{
+    color:#cfcfc9;
+    font-size:16px;
+    line-height:1.9;
+    margin-bottom:22px;
+}
+
+.studio-numbers{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin-top:50px;
+    padding-top:35px;
+    border-top:1px solid #43433e;
+}
+
+.number strong{
+    display:block;
+    font-family:'Playfair Display',serif;
+    font-size:35px;
+    font-weight:500;
+}
+
+.number span{
+    color:#aaa;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+
+/* =====================================================
+   SERVICES
+===================================================== */
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    border-top:1px solid var(--line);
+}
+
+.service-item{
+    padding:45px 30px 45px 0;
+    min-height:275px;
+    border-bottom:1px solid var(--line);
+}
+
+.service-item:nth-child(3n+2),
+.service-item:nth-child(3n+3){
+    padding-left:30px;
+    border-left:1px solid var(--line);
+}
+
+.service-number{
+    font-size:11px;
+    color:var(--accent);
+    letter-spacing:2px;
+    margin-bottom:35px;
+}
+
+.service-item h3{
+    font-family:'Playfair Display',serif;
+    font-size:27px;
+    font-weight:500;
+    margin-bottom:16px;
+}
+
+.service-item p{
+    color:var(--muted);
+    font-size:14px;
+    line-height:1.8;
+}
+
+
+/* =====================================================
+   PROCESS
+===================================================== */
+
+.process{
+    background:#eae5db;
+}
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    border-top:1px solid #cfc8bb;
+}
+
+.process-item{
+    padding:35px 20px 30px 0;
+    min-height:260px;
+    border-right:1px solid #cfc8bb;
+}
+
+.process-item:not(:first-child){
+    padding-left:20px;
+}
+
+.process-item:last-child{
+    border-right:none;
+}
+
+.process-number{
+    font-family:'Playfair Display',serif;
+    font-size:48px;
+    color:#b9ae9d;
+}
+
+.process-item h4{
+    margin:25px 0 13px;
+    text-transform:uppercase;
+    font-size:13px;
+    letter-spacing:1.5px;
+}
+
+.process-item p{
+    color:#716c62;
+    font-size:13px;
+    line-height:1.7;
+}
+
+
+/* =====================================================
+   ONGOING PROJECTS
+===================================================== */
+
+.ongoing-list{
+    border-top:1px solid var(--line);
+}
+
+.ongoing-row{
+    display:grid;
+    grid-template-columns:.6fr 2fr 1fr 1fr;
+    gap:25px;
+    align-items:center;
+    padding:25px 5px;
+    border-bottom:1px solid var(--line);
+    transition:.25s;
+}
+
+.ongoing-row:hover{
+    padding-left:15px;
+    background:#eeeae1;
+}
+
+.ongoing-no{
+    color:#aaa;
+    font-size:12px;
+}
+
+.ongoing-title{
+    font-family:'Playfair Display',serif;
+    font-size:25px;
+}
+
+.ongoing-data{
+    font-size:13px;
+    color:var(--muted);
+}
+
+
+/* =====================================================
+   REVIEWS
+===================================================== */
+
+.reviews-section{
+    background:#fff;
+}
+
+.reviews-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.review{
+    padding:32px;
+    border:1px solid var(--line);
+}
+
+.stars{
+    color:var(--accent);
+    letter-spacing:3px;
+    margin-bottom:25px;
+}
+
+.review p{
+    font-family:'Playfair Display',serif;
+    font-size:22px;
+    line-height:1.55;
+    margin-bottom:28px;
+}
+
+.review-name{
+    font-size:13px;
+    font-weight:600;
+}
+
+.review-project{
+    font-size:12px;
+    color:var(--muted);
+    margin-top:4px;
+}
+
+
+/* =====================================================
+   LOCATIONS
+===================================================== */
+
+.locations{
+    padding:80px 6%;
+}
+
+.location-list{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:14px 32px;
+    color:#6c6a64;
+    font-family:'Playfair Display',serif;
+    font-size:24px;
+}
+
+.location-list span:not(:last-child)::after{
+    content:"•";
+    margin-left:30px;
+    color:#baa98f;
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact-section{
+    background:#1c1c19;
+    color:#fff;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:.8fr 1.2fr;
+    gap:90px;
+}
+
+.contact-title{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(45px,5vw,72px);
+    font-weight:500;
+    line-height:1.05;
+}
+
+.contact-copy{
+    color:#bbb;
+    margin-top:25px;
+    font-size:15px;
+    line-height:1.8;
+}
+
+.contact-detail{
+    margin-top:45px;
+    color:#ddd;
+    line-height:2;
+    font-size:14px;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:22px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:9px;
+}
+
+.form-full{
+    grid-column:1 / -1;
+}
+
+.form-group label{
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:1.2px;
+    color:#999;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:15px 0;
+    color:#fff;
+    background:transparent;
+    border:none;
+    border-bottom:1px solid #4a4a44;
+    outline:none;
+}
+
+.form-group select option{
+    color:#111;
+}
+
+.form-group textarea{
+    resize:vertical;
+    min-height:90px;
+}
+
+.submit-btn{
+    grid-column:1 / -1;
+    border:none;
+    background:var(--accent);
+    color:#fff;
+    padding:18px 25px;
+    cursor:pointer;
+    font-size:12px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:1.3px;
+    margin-top:15px;
+    transition:.3s;
+}
+
+.submit-btn:hover{
+    background:#bb9468;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
 
 footer{
-text-align:center;
-padding:28px;
-font-size:14px;
-color:#777;
+    background:#11110f;
+    color:#fff;
+    padding:65px 6% 30px;
 }
+
+.footer-top{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:70px;
+    padding-bottom:50px;
+    border-bottom:1px solid #30302d;
+}
+
+.footer-brand{
+    font-family:'Playfair Display',serif;
+    font-size:32px;
+}
+
+.footer-tag{
+    margin-top:12px;
+    color:#90908a;
+    font-size:13px;
+}
+
+.footer-col h4{
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:1.8px;
+    color:#777;
+    margin-bottom:18px;
+}
+
+.footer-col a{
+    display:block;
+    margin-bottom:10px;
+    color:#ccc;
+    font-size:13px;
+}
+
+.footer-bottom{
+    padding-top:25px;
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    color:#777;
+    font-size:12px;
+}
+
+
+/* =====================================================
+   WHATSAPP
+===================================================== */
 
 .whatsapp{
-position:fixed;
-bottom:25px;
-right:25px;
-background:#25D366;
-color:#fff;
-padding:15px 18px;
-border-radius:50px;
-font-weight:700;
-text-decoration:none;
-box-shadow:0 12px 25px rgba(0,0,0,.15);
-z-index:999;
+    position:fixed;
+    right:24px;
+    bottom:24px;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#25D366;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+    z-index:9999;
+    box-shadow:0 10px 30px rgba(0,0,0,.18);
 }
 
-@media(max-width:900px){
-nav{display:none;}
-.hero h1{font-size:38px;}
-header{padding:15px 4%;}
-.brand{font-size:18px;}
-.google-badge{display:none;}
-.slide img{height:280px;}
-.arrow{width:38px;height:38px;font-size:22px;}
+
+
+/* PROJECT SLIDERS + FLOATING SOCIALS */
+.project-slider{position:relative;overflow:hidden;width:100%;}
+.project-slider-track{display:flex;width:100%;transition:transform .65s ease;}
+.project-slide{flex:0 0 100%;min-width:100%;}
+.project-slide img{width:100%;height:520px;object-fit:cover;display:block;}
+.project-card:nth-child(3n+1) .project-slide img{height:650px;}
+.project-slider-btn{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border:0;border-radius:50%;background:rgba(20,20,18,.58);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:7;opacity:0;transition:.25s;}
+.project-image:hover .project-slider-btn{opacity:1;}
+.project-slider-btn.prev{left:14px}.project-slider-btn.next{right:14px}
+.project-slider-dots{position:absolute;left:50%;bottom:15px;transform:translateX(-50%);display:flex;gap:7px;z-index:8;}
+.project-slider-dot{width:7px;height:7px;border:0;border-radius:50%;padding:0;background:rgba(255,255,255,.5);cursor:pointer;transition:.2s;}
+.project-slider-dot.active{width:18px;border-radius:10px;background:#fff;}
+.project-image.single-slide .project-slider-btn,.project-image.single-slide .project-slider-dots{display:none;}
+.floating-socials{position:fixed;right:22px;bottom:22px;display:flex;flex-direction:column;gap:12px;z-index:9999;}
+.social-float{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:24px;box-shadow:0 10px 30px rgba(0,0,0,.18);transition:.25s;}
+.social-float:hover{transform:translateY(-3px) scale(1.03);}
+.whatsapp-float{background:#25D366;}
+.instagram-float{background:linear-gradient(135deg,#833AB4,#FD1D1D,#FCAF45);}
+@media(max-width:1100px){.project-slide img,.project-card:nth-child(3n+1) .project-slide img{height:500px}.project-slider-btn{opacity:1}}
+@media(max-width:700px){.project-slide img,.project-card:nth-child(3n+1) .project-slide img{height:420px}.floating-socials{right:14px;bottom:14px}.social-float{width:50px;height:50px;font-size:22px}}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:1100px){
+
+    nav{
+        position:fixed;
+        top:82px;
+        left:0;
+        width:100%;
+        background:var(--bg);
+        flex-direction:column;
+        align-items:flex-start;
+        padding:30px 6%;
+        gap:22px;
+        border-bottom:1px solid var(--line);
+        transform:translateY(-150%);
+        transition:.35s;
+    }
+
+    nav.active{
+        transform:translateY(0);
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .projects-grid,
+    .studio-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .services-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .service-item:nth-child(3n+2),
+    .service-item:nth-child(3n+3){
+        border-left:none;
+        padding-left:0;
+    }
+
+    .service-item:nth-child(even){
+        padding-left:25px;
+        border-left:1px solid var(--line);
+    }
+
+    .process-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .reviews-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .project-card:nth-child(3n+1) .project-image img,
+    .project-image img{
+        height:500px;
+    }
+
 }
+
+
+@media(max-width:700px){
+
+    header{
+        height:72px;
+        padding:0 5%;
+    }
+
+    .logo-area img{
+        height:42px;
+    }
+
+    .brand-name{
+        font-size:17px;
+    }
+
+    nav{
+        top:72px;
+    }
+
+    section{
+        padding:80px 5%;
+    }
+
+    .hero{
+        min-height:680px;
+    }
+
+    .hero-content{
+        padding:0 5% 14%;
+    }
+
+    .hero h1{
+        font-size:50px;
+    }
+
+    .hero-text{
+        font-size:15px;
+    }
+
+    .section-top{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .section-title{
+        font-size:43px;
+    }
+
+    .projects-grid{
+        grid-template-columns:1fr;
+        gap:55px;
+    }
+
+    .project-image img,
+    .project-card:nth-child(3n+1) .project-image img{
+        height:420px;
+    }
+
+    .studio-image img{
+        min-height:420px;
+    }
+
+    .studio-numbers{
+        grid-template-columns:1fr;
+    }
+
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+
+    .service-item,
+    .service-item:nth-child(even){
+        padding:35px 0;
+        border-left:none;
+    }
+
+    .process-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .reviews-grid{
+        grid-template-columns:1fr;
+    }
+
+    .ongoing-row{
+        grid-template-columns:.3fr 1.7fr;
+    }
+
+    .ongoing-data{
+        display:none;
+    }
+
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .form-full,
+    .submit-btn{
+        grid-column:auto;
+    }
+
+    .footer-top{
+        grid-template-columns:1fr;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+    }
+
+    .location-list{
+        justify-content:flex-start;
+        font-size:20px;
+    }
+
+    .location-list span::after{
+        display:none;
+    }
+
+}
+
 </style>
+
 </head>
+
 
 <body>
 
+
+<!-- =====================================================
+HEADER
+===================================================== -->
+
 <header>
-<div class="logo-wrap">
-<img src="logo.png" class="logo">
-<div class="brand">Dhanshree Architects</div>
-<div class="google-badge">Trusted Design & Execution</div>
+
+<div class="logo-area">
+
+<img src="logo.png" alt="Dhanshree Architects Logo">
+
+<div class="brand-name">
+Dhanshree Architects
 </div>
 
-<nav>
+</div>
+
+
+<nav id="nav">
+
 <a href="#projects">Projects</a>
+<a href="#studio">Studio</a>
 <a href="#services">Services</a>
-<a href="#reviews">Reviews</a>
+<a href="#process">Process</a>
 <a href="#contact">Contact</a>
+
+<a
+href="https://api.whatsapp.com/send?phone=919634344267&text=Hello%20Dhanshree%20Architects%2C%20I%20would%20like%20to%20discuss%20a%20project."
+target="_blank"
+class="header-btn"
+>
+Start a Project
+</a>
+
 </nav>
+
+<button
+class="menu-btn"
+onclick="toggleMenu()"
+aria-label="Open Menu">
+☰
+</button>
+
 </header>
 
-<section class="hero">
-<div class="hero-box">
-<h1><span>Architecture</span> • Interior • Turnkey</h1>
-<p>Luxury Spaces. Timeless Design. Trusted Execution.</p>
 
-<div class="hero-btns">
-<a href="https://wa.me/919634344267" class="btn btn-dark">Book Consultation</a>
-<a href="#projects" class="btn btn-gold">View Projects</a>
+<!-- =====================================================
+HERO
+===================================================== -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="hero-small">
+Architecture • Interiors • Turnkey
 </div>
+
+<h1>
+Thoughtful Spaces.<br>
+<span>Timeless Design.</span>
+</h1>
+
+<p class="hero-text">
+
+Dhanshree Architects is a Meerut-based architecture and
+interior design studio creating contemporary homes,
+workplaces and commercial environments across Meerut,
+Noida, Delhi NCR and Western Uttar Pradesh.
+
+</p>
+
+<div class="hero-actions">
+
+<a href="#projects" class="btn btn-light">
+Explore Projects
+</a>
+
+<a href="#contact" class="btn btn-outline">
+Start Your Project
+</a>
+
 </div>
+
+</div>
+
 </section>
+
+
+<!-- =====================================================
+SELECTED PROJECTS
+===================================================== -->
 
 <section id="projects">
-<h2 class="section-title">Featured Projects</h2>
-<p class="section-sub">Real executed projects by Dhanshree Architects.</p>
 
-<div class="premium-slider">
-<div class="slider-track" id="sliderTrack">
-<div class="slide active"><img src="project1.jpg"></div>
-<div class="slide"><img src="project2.jpg"></div>
-<div class="slide"><img src="project3.jpg"></div>
-<div class="slide"><img src="project4.jpg"></div>
-<div class="slide"><img src="project5.jpg"></div>
+<div class="section-top">
+
+<div>
+
+<div class="section-label">
+Selected Work
 </div>
 
-<button class="arrow prev" onclick="moveSlide(-1)">❮</button>
-<button class="arrow next" onclick="moveSlide(1)">❯</button>
-<div class="dots" id="dots"></div>
+<h2 class="section-title">
+Projects that define<br>
+our design thinking.
+</h2>
+
 </div>
+
+<p class="section-description">
+
+A selection of ongoing and completed architecture,
+interior and commercial projects designed by
+Dhanshree Architects.
+
+</p>
+
+</div>
+
+
+<!-- FILTER -->
+
+<div class="project-filter">
+
+<button class="filter-btn active"
+onclick="filterProjects('all',this)">
+All
+</button>
+
+<button class="filter-btn"
+onclick="filterProjects('architecture',this)">
+Architecture
+</button>
+
+<button class="filter-btn"
+onclick="filterProjects('interior',this)">
+Interiors
+</button>
+
+<button class="filter-btn"
+onclick="filterProjects('commercial',this)">
+Commercial
+</button>
+
+<button class="filter-btn"
+onclick="filterProjects('residential',this)">
+Residential
+</button>
+
+</div>
+
+
+<div class="projects-grid">
+
+
+<!-- PROJECT 1 -->
+
+<article class="project-card"
+data-category="architecture commercial">
+
+<div class="project-image" data-project-slider>
+<div class="project-slider">
+<div class="project-slider-track">
+<div class="project-slide"><img src="project-book-publisher.jpg" alt="Book Publisher Office Meerut"></div>
+<div class="project-slide"><img src="project-book-publisher-2.jpg" alt="Book Publisher Office Meerut - View 2" onerror="removeBrokenProjectSlide(this)"></div>
+<div class="project-slide"><img src="project-book-publisher-3.jpg" alt="Book Publisher Office Meerut - View 3" onerror="removeBrokenProjectSlide(this)"></div>
+</div>
+<button class="project-slider-btn prev" type="button" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
+<button class="project-slider-btn next" type="button" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+<div class="project-slider-dots"></div>
+</div>
+<div class="project-overlay"><div class="view-circle">View Project</div></div>
+</div>
+
+<div class="project-info">
+
+<div>
+
+<div class="project-name">
+Book Publisher Office
+</div>
+
+<div class="project-type">
+Architecture + Interior Design
+</div>
+
+</div>
+
+<div class="project-location">
+Noida<br>
+Ongoing
+</div>
+
+</div>
+
+</article>
+
+
+<!-- PROJECT 2 -->
+
+<article class="project-card"
+data-category="Farmhouse">
+
+<div class="project-image" data-project-slider>
+<div class="project-slider">
+<div class="project-slider-track">
+<div class="project-slide"><img src="farmhouse.jpg" alt="Farmhouse Noida"></div>
+<div class="project-slide"><img src="farmhouse-2.jpg" alt="Farmhouse Noida - View 2" onerror="removeBrokenProjectSlide(this)"></div>
+<div class="project-slide"><img src="farmhouse-3.jpg" alt="Farmhouse Noida - View 3" onerror="removeBrokenProjectSlide(this)"></div>
+</div>
+<button class="project-slider-btn prev" type="button" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
+<button class="project-slider-btn next" type="button" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+<div class="project-slider-dots"></div>
+</div>
+<div class="project-overlay"><div class="view-circle">View Project</div></div>
+</div>
+
+<div class="project-info">
+
+<div>
+
+<div class="project-name">
+Residence elevation
+</div>
+
+<div class="project-type">
+Architecture + Interiors
+</div>
+
+</div>
+
+<div class="project-location">
+Meerut<br>
+Ongoing
+</div>
+
+</div>
+
+</article>
+
+
+<!-- PROJECT 3 -->
+
+<article class="project-card"
+data-category="interior commercial">
+
+<div class="project-image" data-project-slider>
+<div class="project-slider">
+<div class="project-slider-track">
+<div class="project-slide"><img src="project-makeup-studio.jpg" alt="Makeup Studio Interior Design"></div>
+<div class="project-slide"><img src="project-makeup-studio-2.jpg" alt="Makeup Studio Interior Design - View 2" onerror="removeBrokenProjectSlide(this)"></div>
+<div class="project-slide"><img src="project-makeup-studio-3.jpg" alt="Makeup Studio Interior Design - View 3" onerror="removeBrokenProjectSlide(this)"></div>
+</div>
+<button class="project-slider-btn prev" type="button" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
+<button class="project-slider-btn next" type="button" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+<div class="project-slider-dots"></div>
+</div>
+<div class="project-overlay"><div class="view-circle">View Project</div></div>
+</div>
+
+<div class="project-info">
+
+<div>
+
+<div class="project-name">
+Makeup Studio
+</div>
+
+<div class="project-type">
+Interior Design
+</div>
+
+</div>
+
+<div class="project-location">
+Meerut
+</div>
+
+</div>
+
+</article>
+
+
+<!-- PROJECT 4 -->
+
+<article class="project-card"
+data-category="commercial interior">
+
+<div class="project-image" data-project-slider>
+<div class="project-slider">
+<div class="project-slider-track">
+<div class="project-slide"><img src="project-advocate-office.jpg" alt="Advocate Office Interior"></div>
+<div class="project-slide"><img src="project-advocate-office-2.jpg" alt="Advocate Office Interior - View 2" onerror="removeBrokenProjectSlide(this)"></div>
+<div class="project-slide"><img src="project-advocate-office-3.jpg" alt="Advocate Office Interior - View 3" onerror="removeBrokenProjectSlide(this)"></div>
+</div>
+<button class="project-slider-btn prev" type="button" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
+<button class="project-slider-btn next" type="button" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+<div class="project-slider-dots"></div>
+</div>
+<div class="project-overlay"><div class="view-circle">View Project</div></div>
+</div>
+
+<div class="project-info">
+
+<div>
+
+<div class="project-name">
+Advocate Office
+</div>
+
+<div class="project-type">
+Commercial Interior
+</div>
+
+</div>
+
+<div class="project-location">
+Delhi
+</div>
+
+</div>
+
+</article>
+
+
+<!-- PROJECT 5 -->
+
+<article class="project-card"
+data-category="residential architecture">
+
+<div class="project-image" data-project-slider>
+<div class="project-slider">
+<div class="project-slider-track">
+<div class="project-slide"><img src="project-residence.jpg" alt="Modern Residential Architecture Meerut"></div>
+<div class="project-slide"><img src="project-residence-2.jpg" alt="Modern Residential Architecture Meerut - View 2" onerror="removeBrokenProjectSlide(this)"></div>
+<div class="project-slide"><img src="project-residence-3.jpg" alt="Modern Residential Architecture Meerut - View 3" onerror="removeBrokenProjectSlide(this)"></div>
+</div>
+<button class="project-slider-btn prev" type="button" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
+<button class="project-slider-btn next" type="button" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+<div class="project-slider-dots"></div>
+</div>
+<div class="project-overlay"><div class="view-circle">View Project</div></div>
+</div>
+
+<div class="project-info">
+
+<div>
+
+<div class="project-name">
+Modern Residence
+</div>
+
+<div class="project-type">
+Architecture + Interior
+</div>
+
+</div>
+
+<div class="project-location">
+Meerut
+</div>
+
+</div>
+
+</article>
+
+
+<!-- PROJECT 6 -->
+
+<article class="project-card"
+data-category="commercial interior">
+
+<div class="project-image" data-project-slider>
+<div class="project-slider">
+<div class="project-slider-track">
+<div class="project-slide"><img src="project-jewellery.jpg" alt="Jewellery Showroom Interior"></div>
+<div class="project-slide"><img src="project-jewellery-2.jpg" alt="Jewellery Showroom Interior - View 2" onerror="removeBrokenProjectSlide(this)"></div>
+<div class="project-slide"><img src="project-jewellery-3.jpg" alt="Jewellery Showroom Interior - View 3" onerror="removeBrokenProjectSlide(this)"></div>
+</div>
+<button class="project-slider-btn prev" type="button" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
+<button class="project-slider-btn next" type="button" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+<div class="project-slider-dots"></div>
+</div>
+<div class="project-overlay"><div class="view-circle">View Project</div></div>
+</div>
+
+<div class="project-info">
+
+<div>
+
+<div class="project-name">
+Jewellery Showroom
+</div>
+
+<div class="project-type">
+ Interior Design
+</div>
+
+</div>
+
+<div class="project-location">
+Western UP
+</div>
+
+</div>
+
+</article>
+
+
+</div>
+
 </section>
+
+
+<!-- =====================================================
+STUDIO
+===================================================== -->
+
+<section class="studio" id="studio">
+
+<div class="studio-grid">
+
+<div class="studio-image">
+
+<img
+src="studio.jpg"
+alt="Dhanshree Architects Studio">
+
+</div>
+
+
+<div>
+
+<div class="section-label">
+The Studio
+</div>
+
+<h2 class="studio-title">
+
+Architecture that is
+thoughtful, practical
+and personal.
+
+</h2>
+
+<p class="studio-text">
+
+Dhanshree Architects is an architecture and interior
+design studio based in Meerut, Uttar Pradesh.
+
+</p>
+
+<p class="studio-text">
+
+We work across residential, commercial, workspace,
+retail and renovation projects with a focus on
+functional planning, contemporary aesthetics,
+practical material selection and close coordination
+throughout the design process.
+
+</p>
+
+<p class="studio-text">
+
+Our work extends across Meerut, Modipuram, Noida,
+Delhi NCR, Ghaziabad, Muradnagar, Muzaffarnagar,
+Bijnor and nearby regions.
+
+</p>
+
+
+<div class="studio-numbers">
+
+<div class="number">
+
+<strong>360°</strong>
+
+<span>
+Design Approach
+</span>
+
+</div>
+
+<div class="number">
+
+<strong>01</strong>
+
+<span>
+Studio for Design + Execution
+</span>
+
+</div>
+
+<div class="number">
+
+<strong>NCR</strong>
+
+<span>
+Projects Across Region
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+SERVICES
+===================================================== -->
 
 <section id="services">
-<h2 class="section-title">Our Expertise</h2>
-<p class="section-sub">Complete planning, designing, execution and supervision under one roof.</p>
 
-<div class="services">
-<div class="card"><h3>Residential</h3><p>Luxury Homes, Villas and Residences.</p></div>
-<div class="card"><h3>Commercial</h3><p>Offices, Showrooms, Retail and Pharma Units.</p></div>
-<div class="card"><h3>Interiors</h3><p>Elegant interior solutions with premium finish.</p></div>
-<div class="card"><h3>Turnkey</h3><p>Concept to handover complete execution.</p></div>
+<div class="section-top">
+
+<div>
+
+<div class="section-label">
+What We Do
 </div>
+
+<h2 class="section-title">
+Design services from<br>
+concept to completion.
+</h2>
+
+</div>
+
+<p class="section-description">
+
+Whether it is a new home, farmhouse, office,
+commercial project or renovation, our process
+combines planning, visualisation, detailing and
+site execution.
+
+</p>
+
+</div>
+
+
+<div class="services-grid">
+
+
+<div class="service-item">
+
+<div class="service-number">
+01
+</div>
+
+<h3>
+Architecture
+</h3>
+
+<p>
+Site planning, floor planning, façade design,
+working drawings, elevation development and
+architectural visualisation.
+</p>
+
+</div>
+
+
+<div class="service-item">
+
+<div class="service-number">
+02
+</div>
+
+<h3>
+Interior Design
+</h3>
+
+<p>
+Space planning, furniture layouts, material
+selection, lighting, ceilings, joinery and
+complete interior detailing.
+</p>
+
+</div>
+
+
+<div class="service-item">
+
+<div class="service-number">
+03
+</div>
+
+<h3>
+Commercial Design
+</h3>
+
+<p>
+Offices, studios, showrooms, retail environments,
+professional workplaces and commercial spaces.
+</p>
+
+</div>
+
+
+<div class="service-item">
+
+<div class="service-number">
+04
+</div>
+
+<h3>
+Turnkey Execution
+</h3>
+
+<p>
+Design, vendor coordination, site supervision,
+material execution and project delivery from
+concept to handover.
+</p>
+
+</div>
+
+
+<div class="service-item">
+
+<div class="service-number">
+05
+</div>
+
+<h3>
+Renovation
+</h3>
+
+<p>
+Residential renovation, office transformation,
+façade redesign and complete interior upgrades.
+</p>
+
+</div>
+
+
+<div class="service-item">
+
+<div class="service-number">
+06
+</div>
+
+<h3>
+Vastu Planning
+</h3>
+
+<p>
+Vastu-conscious planning thoughtfully integrated
+with contemporary architecture and functional
+space planning.
+</p>
+
+</div>
+
+
+</div>
+
 </section>
 
-<section id="reviews">
-<h2 class="section-title">Google Reviews</h2>
 
-<div class="reviews">
-<div class="review-card"><h4>MR Jain Bakery</h4><p>Excellent interior work.</p></div>
-<div class="review-card"><h4>Ayush Jain</h4><p>Professional and timely delivery.</p></div>
-<div class="review-card"><h4>Sahil Jain</h4><p>Creative and highly recommended.</p></div>
+<!-- =====================================================
+PROCESS
+===================================================== -->
+<section class="reviews-section">
+
+<div class="section-top">
+
+<div>
+
+<div class="section-label">
+Client Stories
 </div>
+
+<h2 class="section-title">
+What our clients say.
+</h2>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="reviews-grid">
+
+
+<div class="review">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+“Excellent interior work.”
+</p>
+
+<div class="review-name">
+MR Jain Bakery
+</div>
+
+<div class="review-project">
+Google Review
+</div>
+
+</div>
+
+
+<div class="review">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+“Professional and timely delivery.”
+</p>
+
+<div class="review-name">
+Ayush Jain
+</div>
+
+<div class="review-project">
+Google Review
+</div>
+
+</div>
+
+
+<div class="review">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+“Creative and highly recommended.”
+</p>
+
+<div class="review-name">
+Sahil Jain
+</div>
+
+<div class="review-project">
+Google Review
+</div>
+
+</div>
+
+
+</div>
+
 </section>
 
-<section id="contact">
-<div class="contact">
-<h2>Let's Build Something Exceptional</h2>
-<p>Pooja Arcade, Opp. NAS College, Meerut</p>
-<a href="https://wa.me/919634344267" class="btn btn-gold">WhatsApp Now</a>
+
+
+
+
+<!-- =====================================================
+CONTACT
+===================================================== -->
+
+<section
+class="contact-section"
+id="contact"
+>
+
+<div class="contact-grid">
+
+
+<div>
+
+<div class="section-label">
+Start a Project
 </div>
+
+<h2 class="contact-title">
+
+Let's design
+something
+meaningful.
+
+</h2>
+
+<p class="contact-copy">
+
+Planning a home, farmhouse, office, commercial
+space or renovation? Tell us briefly about the
+project and our studio can connect with you.
+
+</p>
+
+
+<div class="contact-detail">
+
+<strong>Dhanshree Architects</strong><br>
+
+Pooja Arcade,<br>
+Opp. NAS College,<br>
+Meerut, Uttar Pradesh
+
+<br><br>
+
+WhatsApp / Call:<br>
++91 96343 44267
+
+</div>
+
+</div>
+
+
+<!-- FORM -->
+
+<form
+class="form-grid"
+onsubmit="sendWhatsapp(event)"
+>
+
+
+<div class="form-group">
+
+<label>
+Name
+</label>
+
+<input
+type="text"
+id="name"
+placeholder="Your Name"
+required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Phone Number
+</label>
+
+<input
+type="tel"
+id="phone"
+placeholder="+91"
+required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Project Type
+</label>
+
+<select id="projectType">
+
+<option>
+Residential Architecture
+</option>
+
+<option>
+Interior Design
+</option>
+
+<option>
+Commercial Design
+</option>
+
+<option>
+Farmhouse
+</option>
+
+<option>
+Renovation
+</option>
+
+<option>
+Turnkey Project
+</option>
+
+<option>
+Other
+</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Project Location
+</label>
+
+<input
+type="text"
+id="location"
+placeholder="Meerut / Noida / NCR"
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Approx. Area
+</label>
+
+<input
+type="text"
+id="area"
+placeholder="Example: 3000 sq.ft."
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Approx. Budget
+</label>
+
+<input
+type="text"
+id="budget"
+placeholder="Example: ₹50–75 Lakh"
+>
+
+</div>
+
+
+<div class="form-group form-full">
+
+<label>
+Tell us about your project
+</label>
+
+<textarea
+id="message"
+placeholder="Briefly describe your project..."
+></textarea>
+
+</div>
+
+
+<button
+type="submit"
+class="submit-btn"
+>
+
+Send Project Enquiry on WhatsApp
+
+</button>
+
+
+</form>
+
+</div>
+
 </section>
+
+
+<!-- =====================================================
+FOOTER
+===================================================== -->
 
 <footer>
-© 2026 Dhanshree Architects
+
+<div class="footer-top">
+
+
+<div>
+
+<div class="footer-brand">
+Dhanshree Architects
+</div>
+
+<div class="footer-tag">
+Architecture • Interiors • Turnkey
+</div>
+
+</div>
+
+
+<div class="footer-col">
+
+<h4>
+Studio
+</h4>
+
+<a href="#projects">
+Projects
+</a>
+
+<a href="#studio">
+About
+</a>
+
+<a href="#services">
+Services
+</a>
+
+<a href="#process">
+Process
+</a>
+
+</div>
+
+
+<div class="footer-col">
+
+<h4>
+Connect
+</h4>
+
+<a href="https://api.whatsapp.com/send?phone=919634344267&text=Hello%20Dhanshree%20Architects%2C%20I%20would%20like%20to%20discuss%20a%20project." class="btn btn-gold">WhatsApp Now</a>
+<a href="https://www.instagram.com/dhanshree_architects" target="_blank" rel="noopener noreferrer">Instagram</a>
+
+<a href="#">
+Google Business
+</a>
+
+<a href="#contact">
+Project Enquiry
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="footer-bottom">
+
+<div>
+© 2026 Dhanshree Architects. All Rights Reserved.
+</div>
+
+</div>
+
 </footer>
 
-<a href="https://wa.me/919634344267" class="whatsapp">WhatsApp</a>
+
+<!-- =====================================================
+WHATSAPP FLOATING BUTTON
+===================================================== -->
+<div class="floating-socials">
+<a href="https://www.instagram.com/dhanshree_architects" target="_blank" rel="noopener noreferrer" class="social-float instagram-float" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://api.whatsapp.com/send?phone=919634344267&text=Hello%20Dhanshree%20Architects%2C%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="social-float whatsapp-float" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+
+
+
+<!-- =====================================================
+JAVASCRIPT
+===================================================== -->
 
 <script>
-const track=document.getElementById("sliderTrack");
-const slides=document.querySelectorAll(".slide");
-const dotsContainer=document.getElementById("dots");
 
-let currentIndex=0;
-let autoSlide;
 
-slides.forEach((_,i)=>{
-let dot=document.createElement("div");
-dot.classList.add("dot");
-if(i===0) dot.classList.add("active");
-dot.onclick=()=>goToSlide(i);
-dotsContainer.appendChild(dot);
+/* MOBILE MENU */
+
+function toggleMenu(){
+
+    document
+    .getElementById("nav")
+    .classList
+    .toggle("active");
+
+}
+
+
+/* CLOSE MENU AFTER CLICK */
+
+document
+.querySelectorAll("#nav a")
+.forEach(link=>{
+
+    link.addEventListener("click",()=>{
+
+        document
+        .getElementById("nav")
+        .classList
+        .remove("active");
+
+    });
+
 });
 
-const dots=document.querySelectorAll(".dot");
 
-function updateSlider(){
-track.style.transform=`translateX(-${currentIndex*100}%)`;
-slides.forEach(s=>s.classList.remove("active"));
-dots.forEach(d=>d.classList.remove("active"));
-slides[currentIndex].classList.add("active");
-dots[currentIndex].classList.add("active");
+/* PROJECT FILTER */
+
+function filterProjects(category,button){
+
+    let cards =
+    document.querySelectorAll(".project-card");
+
+    let buttons =
+    document.querySelectorAll(".filter-btn");
+
+
+    buttons.forEach(btn=>{
+
+        btn.classList.remove("active");
+
+    });
+
+
+    button.classList.add("active");
+
+
+    cards.forEach(card=>{
+
+        let categories =
+        card.dataset.category;
+
+
+        if(
+            category === "all" ||
+            categories.includes(category)
+        ){
+
+            card.classList.remove("hide");
+
+        }
+
+        else{
+
+            card.classList.add("hide");
+
+        }
+
+    });
+
 }
 
-function moveSlide(step){
-currentIndex+=step;
-if(currentIndex>=slides.length) currentIndex=0;
-if(currentIndex<0) currentIndex=slides.length-1;
-updateSlider();
-resetAuto();
+
+/* WHATSAPP PROJECT FORM */
+
+function sendWhatsapp(event){
+
+    event.preventDefault();
+
+
+    const name =
+    document.getElementById("name").value;
+
+    const phone =
+    document.getElementById("phone").value;
+
+    const projectType =
+    document.getElementById("projectType").value;
+
+    const location =
+    document.getElementById("location").value;
+
+    const area =
+    document.getElementById("area").value;
+
+    const budget =
+    document.getElementById("budget").value;
+
+    const message =
+    document.getElementById("message").value;
+
+
+    const text =
+
+`Hello Dhanshree Architects,
+
+I would like to discuss a project.
+
+Name: ${name}
+
+Phone: ${phone}
+
+Project Type: ${projectType}
+
+Project Location: ${location || "Not Mentioned"}
+
+Approx. Area: ${area || "Not Mentioned"}
+
+Approx. Budget: ${budget || "Not Mentioned"}
+
+Project Brief:
+${message || "Not Mentioned"}
+
+Please contact me regarding the project.`;
+
+
+    const whatsappNumber =
+    "919634344267";
+
+
+    const whatsappURL =
+    "https://api.whatsapp.com/send?phone=" +
+    whatsappNumber +
+    "&text=" +
+    encodeURIComponent(text);
+
+
+    window.location.href = whatsappURL;
+
 }
 
-function goToSlide(index){
-currentIndex=index;
-updateSlider();
-resetAuto();
-}
 
-function startAuto(){
-autoSlide=setInterval(()=>moveSlide(1),4000);
-}
 
-function resetAuto(){
-clearInterval(autoSlide);
-startAuto();
-}
-
-updateSlider();
-startAuto();
+/* PROJECT IMAGE SLIDERS */
+function removeBrokenProjectSlide(img){const slide=img.closest('.project-slide');const wrapper=img.closest('[data-project-slider]');if(slide)slide.remove();if(wrapper&&wrapper._refreshProjectSlider)wrapper._refreshProjectSlider();}
+document.querySelectorAll('[data-project-slider]').forEach((wrapper)=>{
+ const track=wrapper.querySelector('.project-slider-track'); const prevBtn=wrapper.querySelector('.project-slider-btn.prev'); const nextBtn=wrapper.querySelector('.project-slider-btn.next'); const dotsWrap=wrapper.querySelector('.project-slider-dots'); let currentIndex=0; let autoTimer=null; let touchStartX=0;
+ const getSlides=()=>Array.from(wrapper.querySelectorAll('.project-slide'));
+ function buildDots(){dotsWrap.innerHTML='';getSlides().forEach((_,i)=>{const d=document.createElement('button');d.type='button';d.className='project-slider-dot';d.addEventListener('click',(e)=>{e.stopPropagation();currentIndex=i;update();startAuto();});dotsWrap.appendChild(d);});}
+ function update(){const s=getSlides();if(!s.length)return;if(currentIndex>=s.length)currentIndex=0;if(currentIndex<0)currentIndex=s.length-1;track.style.transform=`translateX(-${currentIndex*100}%)`;Array.from(dotsWrap.children).forEach((d,i)=>d.classList.toggle('active',i===currentIndex));wrapper.classList.toggle('single-slide',s.length<=1);}
+ function next(){currentIndex++;update();} function prev(){currentIndex--;update();}
+ function startAuto(){clearInterval(autoTimer);if(getSlides().length>1)autoTimer=setInterval(next,4500);}
+ wrapper._refreshProjectSlider=()=>{if(currentIndex>=getSlides().length)currentIndex=0;buildDots();update();startAuto();};
+ prevBtn.addEventListener('click',(e)=>{e.stopPropagation();prev();startAuto();}); nextBtn.addEventListener('click',(e)=>{e.stopPropagation();next();startAuto();});
+ wrapper.addEventListener('mouseenter',()=>clearInterval(autoTimer)); wrapper.addEventListener('mouseleave',startAuto);
+ wrapper.addEventListener('touchstart',(e)=>{touchStartX=e.touches[0].clientX;},{passive:true}); wrapper.addEventListener('touchend',(e)=>{const dx=touchStartX-e.changedTouches[0].clientX;if(Math.abs(dx)>45){dx>0?next():prev();startAuto();}},{passive:true});
+ buildDots();update();startAuto();
+});
 </script>
+
 
 </body>
 </html>
